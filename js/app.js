@@ -48,6 +48,7 @@ Enemy.prototype.update = function(dt) {
         this.hitbox.y < player.hitbox.h &&
         this.hitbox.h > player.hitbox.y) {
 		console.log("Squashed by a bug!");
+		player.score = 0;
 		player.reset();
 	}
 }
