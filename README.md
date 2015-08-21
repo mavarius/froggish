@@ -1,6 +1,7 @@
-frontend-nanodegree-arcade-game
-===============================
+Wellcome to Froggish: the Not-Quite-Frogger Game!
+=================================================
 
-Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015/l-3072058665/m-3072588797
-
-for self-checking their submission.
+How To Play:
+1. Select your character
+2. Use the arrow keys to move your character
+3. Avoid the bugs and try to reach the other side
