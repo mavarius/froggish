@@ -1,7 +1,9 @@
-Wellcome to Froggish: the Not-Quite-Frogger Game!
+Welcome to Froggish: the Not-Quite-Frogger Game!
 =================================================
 
+How To Run:
+In your browser, navigate to http://mavarius.github.io/froggish
+
 How To Play:
-1. Select your character
-2. Use the arrow keys to move your character
-3. Avoid the bugs and try to reach the other side
+1. Use the arrow keys to move your character
+2. Avoid the bugs and try to reach the other side
