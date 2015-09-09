@@ -1,4 +1,4 @@
-(function () {
+var GameObjects = (function () {
 	'use strict';
 
 	// Enemies our player must avoid
@@ -147,24 +147,31 @@
 			this.win = false;
 		}
 	};
-
-	// Now instantiate your objects.
-	// Place all enemy objects in an array called allEnemies
-	var allEnemies = [new Enemy(), new Enemy(), new Enemy()];
-
-	// Place the player object in a variable called player
-	var player = new Player();
-
-	// This listens for key presses and sends the keys to your
-	// Player.handleInput() method. You don't need to modify this.
-	document.addEventListener('keyup', function(e) {
-		var allowedKeys = {
-			37: 'left',
-			38: 'up',
-			39: 'right',
-			40: 'down'
-		};
-		player.handleInput(allowedKeys[e.keyCode]);
-	});
+	
+	var returnVar = {
+		Player: Player,
+		Enemy: Enemy,
+	};
+	
+	return returnVar;
 
 }());
+
+// Now instantiate your objects.
+// Place all enemy objects in an array called allEnemies
+var allEnemies = [new GameObjects.Enemy(), new GameObjects.Enemy(), new GameObjects.Enemy()];
+
+// Place the player object in a variable called player
+var player = new GameObjects.Player();
+
+// This listens for key presses and sends the keys to your
+// Player.handleInput() method. You don't need to modify this.
+document.addEventListener('keyup', function(e) {
+	var allowedKeys = {
+		37: 'left',
+		38: 'up',
+		39: 'right',
+		40: 'down'
+	};
+	player.handleInput(allowedKeys[e.keyCode]);
+});
