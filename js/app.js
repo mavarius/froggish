@@ -13,6 +13,7 @@ var Enemy = function() {
 
 	this.Buglocity = Math.floor(Math.random() * 300) + 200;
 
+<<<<<<< HEAD
 	// Collision Hitbox
 	this.hitbox = {
 		x: this.x + 10,
@@ -21,10 +22,17 @@ var Enemy = function() {
 		h: this.y + 162
 	};
 }
+=======
+    // The image/sprite for our enemies, this uses
+    // a helper we've provided to easily load images
+    this.sprite = 'images/enemy-bug.png';
+};
+>>>>>>> udacity/master
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
+<<<<<<< HEAD
 	// You should multiply any movement by the dt parameter
 	// which will ensure the game runs at the same speed for
 	// all computers.
@@ -64,6 +72,17 @@ Enemy.prototype.update = function(dt) {
 Enemy.prototype.render = function() {
 	ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 }
+=======
+    // You should multiply any movement by the dt parameter
+    // which will ensure the game runs at the same speed for
+    // all computers.
+};
+
+// Draw the enemy on the screen, required method for game
+Enemy.prototype.render = function() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+};
+>>>>>>> udacity/master
 
 // Now write your own player class
 // This class requires an update(), render() and
