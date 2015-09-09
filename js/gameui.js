@@ -1,4 +1,4 @@
-(function () {
+var UIModule = (function () {
 	'use strict';
 
 	var GameUI = function() {
@@ -19,7 +19,13 @@
 		ctx.fillText("Current Score: " + gameUI.score, canvas.width / 2, 700);
 		ctx.fillText("High Score: " + gameUI.hiscore, canvas.width / 2, 750);
 	};
-
-	var gameUI = new GameUI();
+	
+	var returnVar = {
+		GameUI: GameUI
+	};
+  
+	return returnVar;
 
 }());
+
+var gameUI = new UIModule.GameUI();
