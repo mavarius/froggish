@@ -1,21 +1,25 @@
-'use strict';
-var GameUI = function() {
-	// Text Attributes
-	ctx.font = '30px Arial';
-	ctx.textAlign = 'center';
-	ctx.fillStyle = 'black';
+(function () {
+	'use strict';
 
-	this.score = 0;
-	this.hiscore = 0;
-	this.message = 'Get to da watta!';
-}
+	var GameUI = function() {
+		// Text Attributes
+		ctx.font = '30px Arial';
+		ctx.textAlign = 'center';
+		ctx.fillStyle = 'black';
 
-GameUI.prototype.update = function(dt) {}
+		this.score = 0;
+		this.hiscore = 0;
+		this.message = 'Get to the water!';
+	};
 
-GameUI.prototype.render = function() {
-	ctx.fillText(gameUI.message, canvas.width / 2, 650);
-	ctx.fillText("Current Score: " + gameUI.score, canvas.width / 2, 700);
-	ctx.fillText("High Score: " + gameUI.hiscore, canvas.width / 2, 750);
-}
+	GameUI.prototype.update = function(dt) {};
 
-var gameUI = new GameUI();
+	GameUI.prototype.render = function() {
+		ctx.fillText(gameUI.message, canvas.width / 2, 650);
+		ctx.fillText("Current Score: " + gameUI.score, canvas.width / 2, 700);
+		ctx.fillText("High Score: " + gameUI.hiscore, canvas.width / 2, 750);
+	};
+
+	var gameUI = new GameUI();
+
+}());
